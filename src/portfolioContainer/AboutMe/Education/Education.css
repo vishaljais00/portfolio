@@ -1,0 +1,90 @@
+.aboutme-education {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: fit-content;
+    padding: 20px;
+    background-image: url('../../../assets/Home/Simple\ Shiny.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60%
+  }
+
+  .edu-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .line {
+    width: 2px;
+    background-color: black;
+    margin-right: 10px;
+  }
+
+.edu-head{
+    text-align: center;
+}
+
+.edu-body{
+    font-size: 12px;
+}
+
+.edu-body-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+   
+}
+
+.edu-body-data div:nth-child(even){
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: end
+}
+  
+.inner {
+width: 70%;
+height: auto;
+margin: 10px
+}
+
+
+  
+
+@media screen and (max-width: 786px){
+
+     .inner {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .aboutme-education{
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .inner {
+        width: 100%;
+        height: auto;
+    }
+
+    .edu-body-data div:nth-child(even){
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: end
+    }
+      
+}
+
+
+
+
+  

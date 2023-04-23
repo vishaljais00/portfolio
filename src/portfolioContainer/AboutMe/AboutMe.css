@@ -1,0 +1,166 @@
+.aboutme-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.aboutme-parent{
+    width: 100%;
+}
+  
+.aboutme-head{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins Bold';
+    margin: 0 auto;
+    width: 50%
+}
+
+.aboutme-head hr {
+    width: 50%;
+    margin: auto;
+}
+
+.aboutme-head .row .col1{
+    background-color: #000;
+    height: 3px;
+    border-left: 2px solid;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+.aboutme-head .row .col2{
+    background-color: var(--dark-orange);
+    height: 3px;
+}
+
+.aboutme-head .row .col3{
+    background-color: #000;
+    height: 3px;
+    border-left: 2px solid;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.aboutme-body {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    padding: 0 50px;
+    margin: 25px auto;
+    justify-content: space-evenly;
+}
+
+.aboutme-aside {
+    height: 300px;
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-image: url('../../assets/Home/Animated\ Shape.svg');
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+    .nav-item:hover {
+        font-size: 16px;
+        transform: scale(1.5);
+        transition: 0.5 ease-in
+    }
+  
+
+@media screen and (max-width: 786px){
+
+    .aboutme-body{
+        flex-direction: column;
+    }
+    .aboutme-aside {
+        margin: 5px 0 10px 0px; 
+        flex-direction: row;
+        justify-content: space-between;
+        width: 500px;
+        height: 60px;
+        border-top-left-radius: 10%;
+        border-bottom-left-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%;
+        height: auto;
+    }
+
+    .nav-item:hover {
+        font-size: 16px;
+        transform: none;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .aboutme-aside {
+        width: 400px;
+    }
+
+    .nav-item:hover {
+        font-size: 16px;
+        transform: none;
+    }
+      
+}
+
+@media screen and (max-width: 450px) {
+
+    .aboutme-parent{
+        width: 100%;
+    }
+    .aboutme-body{
+        flex-direction: column;
+        margin: 0 5px;
+        padding: 0pc
+    }
+    .aboutme-aside {
+        margin: 5px 0 10px 0px; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 300px;
+    }
+
+
+    .nav-item:hover {
+        font-size: 16px;
+        transform: none;
+    }
+
+}
+
+@media screen and (max-width: 350px) { 
+
+    .aboutme-parent{
+        width: 300px;
+    }
+    .aboutme-body{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .aboutme-aside {
+        margin: 5px 0 10px 0px; 
+        flex-direction: row;
+        justify-content: space-between;
+        width: 300px;
+    }
+
+    .nav-item:hover {
+        font-size: 16px;
+        transform: none;
+    }
+}
+
+
+  
